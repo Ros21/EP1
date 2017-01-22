@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".OptionsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +28,7 @@
         <activity android:name=".FeedbackActivity"/>
         <activity android:name=".FireAppActivity"/>
         <activity android:name=".SignupActivity"/>
-        <activity android:name=".OptionsActivity"/>
+        <activity android:name=".LoginActivity"/>
     </application>
 
 </manifest>
