@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     Toast.makeText(LoginActivity.this,"Login Successful",Toast.LENGTH_LONG).show();
                     progressDialog.dismiss();
-                    startActivity(new Intent(LoginActivity.this,OptionsActivity.class));
+                    startActivity(new Intent(LoginActivity.this,PostActivity.class));
                     //checkUserExist();
 
                 }else{

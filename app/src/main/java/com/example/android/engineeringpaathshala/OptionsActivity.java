@@ -40,6 +40,8 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
                 break;
 
            case R.id.discussionforumid:
+               Intent intn1 = new Intent(OptionsActivity.this, DiscussionActivity.class);
+               startActivity(intn1);
                 break;
         }
     }

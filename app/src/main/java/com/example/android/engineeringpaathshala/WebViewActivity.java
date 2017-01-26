@@ -21,11 +21,11 @@ public class WebViewActivity extends AppCompatActivity {
         switch ( ButtonValue.buttonClicked) {
             case 1: {
                // Log.v("WebViewActivity", "value of button2 is "+ButtonValue.buttonClicked);
-                url = "https://drive.google.com/file/d/0B9N4HvlxCb1zZjlPWEJWRXZZSEk/view";
+                url = "https://drive.google.com/file/d/0B-hExRW9Hk6aZ25WU3otZ3hpUlE/view";
                 break;
             }
             case 2: {
-                url = "https://drive.google.com/open?id=0B9N4HvlxCb1zTzU1cUh6RjFaWnM";
+                url = "https://drive.google.com/file/d/0B-hExRW9Hk6aTkJQbGd1cXgzOXM/view";
                 //Log.v("WebViewActivity", "value of button2 is "+ButtonValue.buttonClicked);
                 break;
             }

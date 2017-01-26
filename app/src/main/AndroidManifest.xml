@@ -22,6 +22,8 @@
         <activity android:name=".CourseActivity6"/>
         <activity android:name=".NotesActivity"/>
         <activity android:name=".WebViewActivity"/>
+        <activity android:name=".DiscussionActivity"/>
+        <activity android:name=".PostActivity"/>
         <activity android:name=".SemesterActivity"/>
         <activity android:name=".GoogleSignInActivity"/>
         <activity android:name=".UploadActivity"/>
