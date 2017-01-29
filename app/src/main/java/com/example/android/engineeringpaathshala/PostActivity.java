@@ -29,7 +29,7 @@ public class PostActivity extends AppCompatActivity {
 
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Discussion");
+        DatabaseReference myRef = database.getReference().child("Discussion");
 
         myRef.setValue(question);
 

@@ -12,15 +12,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:onClick="askFunction" />
-
-    <TextView
-        android:text="TextView"
+    <GridView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridViewQuestion"
         android:layout_below="@+id/askButton"
-        android:layout_toStartOf="@+id/askButton"
-        android:layout_marginTop="101dp"
-        android:id="@+id/textViewForum"
-        android:layout_alignParentEnd="true" />
+        />
 
 </RelativeLayout>
