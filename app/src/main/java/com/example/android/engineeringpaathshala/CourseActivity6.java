@@ -18,8 +18,17 @@ public class CourseActivity6 extends AppCompatActivity {
         btn_dc.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+                ButtonContainer.ButtonValue.buttonClicked = 61;
                 Intent intent = new Intent(CourseActivity6.this,NotesActivity.class);
                 startActivity(intent);
             }
         });
-    }}
+    }
+
+
+    public void ESFunction(View view) {
+        ButtonContainer.ButtonValue.buttonClicked = 62;
+        Intent intent = new Intent(CourseActivity6.this,NotesActivity.class);
+        startActivity(intent);
+    }
+}

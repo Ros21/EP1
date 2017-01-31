@@ -25,14 +25,14 @@ public class PostActivity extends AppCompatActivity {
     public void questionFunction(View view){
         mEditText = (EditText) findViewById(R.id.editTextQuestion);
         String question = mEditText.getText().toString().trim();
+
+
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("Discussion");
+        String userId = mDatabase.push().getKey();
+
+        mDatabase.child(userId).setValue(question);
+
         mEditText.setText("");
-
-        // Write a message to the database
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference().child("Discussion");
-
-        myRef.setValue(question);
-
         Intent intent = new Intent(PostActivity.this,DiscussionActivity.class);
        // intent.putExtra("Data",question);
         startActivity(intent);
