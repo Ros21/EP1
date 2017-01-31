@@ -31,6 +31,7 @@
         <activity android:name=".FireAppActivity"/>
         <activity android:name=".SignupActivity"/>
         <activity android:name=".LoginActivity"/>
+        <activity android:name=".QAActivity"/>
     </application>
 
 </manifest>

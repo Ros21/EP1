@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Question"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textViewMainQuestion"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textViewMainQuestion"
+        android:layout_alignParentStart="true"
+        android:id="@+id/listViewAnswers" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:id="@+id/editTextPostAns"
+        android:layout_alignParentStart="true"
+        android:hint="Post your Answer here" />
+
+    <Button
+        android:text="Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextPostAns"
+        android:layout_marginEnd="111dp"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentRight="true"
+        android:onClick="postAns"
+        android:id="@+id/buttonPost" />
+</RelativeLayout>

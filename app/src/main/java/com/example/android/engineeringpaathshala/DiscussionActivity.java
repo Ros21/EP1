@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -38,6 +39,16 @@ public class DiscussionActivity extends AppCompatActivity {
                 };
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = ((TextView)view).getText().toString();
+                Intent intent = new Intent(DiscussionActivity.this,QAActivity.class);
+                intent.putExtra("Question",item);
+                startActivity(intent);
+                //Toast.makeText(getBaseContext(), item, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
 
