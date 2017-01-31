@@ -66,8 +66,8 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
     public void checkLogin(){
-        String loginemail = editLoginTextEmail.getText().toString().trim();
-        String loginpassword  = editLoginTextPassword.getText().toString().trim();
+        final String loginemail = editLoginTextEmail.getText().toString();
+        final String loginpassword  = editLoginTextPassword.getText().toString();
 
         if(TextUtils.isEmpty(loginemail)){
             Toast.makeText(this,"Please enter email",Toast.LENGTH_LONG).show();
@@ -83,16 +83,28 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.setMessage("Login Please Wait...");
         progressDialog.show();
 
+        if( loginemail.matches("admin@gmail.com") && loginpassword.matches("adminadmin") ) {
+            Toast.makeText(getApplicationContext(), "Welcome Admin", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(LoginActivity.this, AdminActivity.class));
+            return;
+        }
+
+
         mAuth.signInWithEmailAndPassword(loginemail,loginpassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(LoginActivity.this,"Login Successful",Toast.LENGTH_LONG).show();
                     progressDialog.dismiss();
-                    startActivity(new Intent(LoginActivity.this,PostActivity.class));
+
+                    //check for admin
+
+
+                    startActivity(new Intent(LoginActivity.this,PostActivity.class));}
                     //checkUserExist();
 
-                }else{
+                else{
+
                     Toast.makeText(LoginActivity.this,"Login Error",Toast.LENGTH_LONG).show();
                     progressDialog.dismiss();
 

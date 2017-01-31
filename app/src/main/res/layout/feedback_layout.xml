@@ -8,14 +8,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Post"
+        android:onClick="PostFeedbackFunction"
         android:layout_centerInParent="true"
-        android:id="@+id/button2" />
+        android:id="@+id/ButtonPostFeed" />
 
     <EditText
         android:layout_width="350dp"
         android:layout_height="200dp"
         android:hint="Enter your feedback here"
-        android:id="@+id/editText"
+        android:id="@+id/editTextFeedback"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:singleLine="false" />

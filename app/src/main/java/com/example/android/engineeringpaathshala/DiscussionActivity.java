@@ -17,17 +17,22 @@ import com.google.firebase.database.FirebaseDatabase;
  */
 
 public class DiscussionActivity extends AppCompatActivity {
+    private ListView listView;
+    private DatabaseReference ref;
+    private FirebaseListAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.forum_layout);
+
 //        ArrayList<String> words = new ArrayList<>();
 //        words.add("What is Simulation?");
 //        words.add("What is Simulation?");
-        ListView listView =(ListView) findViewById(R.id.listViewQuestion);
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Discussion");
-        final FirebaseListAdapter<String> adapter =
+
+        listView =(ListView) findViewById(R.id.listViewQuestion);
+        ref = FirebaseDatabase.getInstance().getReference("Discussion");
+        adapter =
                 new FirebaseListAdapter<String>(DiscussionActivity.this, String.class, android.R.layout.simple_list_item_1, ref) {
                     @Override
                     protected void populateView(View v, String model, int position) {
@@ -38,6 +43,7 @@ public class DiscussionActivity extends AppCompatActivity {
                     }
                 };
         listView.setAdapter(adapter);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -67,7 +73,7 @@ public class DiscussionActivity extends AppCompatActivity {
 
 
     public void askFunction(View view){
-        Intent in1= new Intent(DiscussionActivity.this,PostActivity.class);
+        Intent in1= new Intent(DiscussionActivity.this,LoginActivity.class);
         startActivity(in1);
 
     }
