@@ -5,21 +5,53 @@
     android:weightSum="1">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Post"
         android:onClick="PostFeedbackFunction"
-        android:layout_centerInParent="true"
-        android:id="@+id/ButtonPostFeed" />
+        android:id="@+id/ButtonPostFeed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/com_facebook_button_send_background"
+        android:textColor="@color/buttonTextColor" />
 
     <EditText
-        android:layout_width="350dp"
-        android:layout_height="200dp"
-        android:hint="Enter your feedback here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top"
         android:id="@+id/editTextFeedback"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/ButtonPostFeed"
+        android:layout_below="@+id/ratingBar"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:inputType="textMultiLine"
+        android:hint="Enter your feedback here"
+        android:autoText="false" />
+
+    <TextView
+        android:text="Rate the App"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/textViewRating"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize=".5"
+        android:layout_marginTop="19dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginStart="20dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:singleLine="false" />
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:rating="5.0"
+        android:layout_marginEnd="60dp"
+        android:layout_alignTop="@+id/textViewRating"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="38dp" />
 
 
 </RelativeLayout>

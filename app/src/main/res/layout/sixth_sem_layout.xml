@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Data Communication"
+        android:onClick="DCFunction"
         android:textAllCaps="false"/>
     <Button
         android:id="@+id/embeddedSystems"
@@ -26,18 +27,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="OOSE"
+        android:onClick="OOSEFnction"
         android:textAllCaps="false"/>
     <Button
         android:id="@+id/simulation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Simulation and Modeling"
-        android:textAllCaps="false"/>
-    <Button
-        android:id="@+id/advance_java"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Advance Java"
+        android:onClick="SMFunction"
         android:textAllCaps="false"/>
 
 </LinearLayout>

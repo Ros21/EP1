@@ -20,14 +20,37 @@ public class NotesActivity extends AppCompatActivity {
         btn_syll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                switch (ButtonContainer.ButtonValue.buttonClicked ) {
+                    case 61:
 
-                //ButtonValue.buttonClicked = 1;
-               //callIntent();
+                        String url = "https://drive.google.com/open?id=0B-hExRW9Hk6aZ25WU3otZ3hpUlE";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+                    case 62:
 
-                String url = "https://drive.google.com/open?id=0B-hExRW9Hk6aZ25WU3otZ3hpUlE";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
+                        url = "https://drive.google.com/open?id=0B-hExRW9Hk6aaHl6TUE1VzYzVk0";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+                    case 63:
+
+                        url = "https://drive.google.com/open?id=0B-hExRW9Hk6aRUVVVzVIbkR2MHM";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+                    case 64:
+
+                        url = "https://drive.google.com/open?id=0B-hExRW9Hk6aSWNJTDBmVHZkSGM";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+
+                }
 
             }
         });
@@ -45,12 +68,14 @@ public class NotesActivity extends AppCompatActivity {
                         Intent i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
                         startActivity(i);
+                        break;
                     case 62:
 
                         url = "https://drive.google.com/open?id=0B-hExRW9Hk6aWUdxc0hXSjdkRHM";
                         i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
                         startActivity(i);
+                        break;
                 }
 
             }
