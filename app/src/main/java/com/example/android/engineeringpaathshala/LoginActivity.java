@@ -83,11 +83,11 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.setMessage("Login Please Wait...");
         progressDialog.show();
 
-        if( loginemail.matches("admin@gmail.com") && loginpassword.matches("adminadmin") ) {
-            Toast.makeText(getApplicationContext(), "Welcome Admin", Toast.LENGTH_LONG).show();
-            startActivity(new Intent(LoginActivity.this, AdminActivity.class));
-            return;
-        }
+//        if( loginemail.matches("admin@gmail.com") && loginpassword.matches("adminadmin") ) {
+//            Toast.makeText(getApplicationContext(), "Welcome Admin", Toast.LENGTH_LONG).show();
+//            startActivity(new Intent(LoginActivity.this, AdminActivity.class));
+//            return;
+//        }
 
 
         mAuth.signInWithEmailAndPassword(loginemail,loginpassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
