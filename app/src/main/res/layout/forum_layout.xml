@@ -4,19 +4,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:text="Ask Question"
-        android:layout_width="153dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/askButton"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="askFunction" />
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listViewQuestion"
-        android:layout_below="@+id/askButton"
+        android:layout_below="@+id/buttonSign"
         />
 
     <Button
@@ -24,11 +17,10 @@
         android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="47dp"
         android:id="@+id/buttonSign"
-        android:onClick="signFunction"/>
+        android:onClick="signFunction"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

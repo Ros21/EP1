@@ -99,9 +99,17 @@ public class DiscussionActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
-            case R.id.DSignin:
-                ButtonContainer.ButtonValue.ReturnString = "Sign In";
-                startActivity(new Intent(DiscussionActivity.this,LoginActivity.class));
+            case R.id.item_askQuestion:
+                if(TextUtils.isEmpty(ButtonContainer.ButtonValue.Uname)){
+                    ButtonContainer.ButtonValue.ReturnString = "Post";
+                    Intent in1 = new Intent(DiscussionActivity.this, LoginActivity.class);
+                    startActivity(in1);
+                }
+                else
+                {
+                    Intent in2 = new Intent(DiscussionActivity.this, PostActivity.class);
+                    startActivity(in2);
+                }
                 return true;
 
             default:
