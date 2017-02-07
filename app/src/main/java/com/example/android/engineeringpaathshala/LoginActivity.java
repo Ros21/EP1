@@ -18,6 +18,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import static com.example.android.engineeringpaathshala.ButtonContainer.ButtonValue.ReturnString;
+import static com.example.android.engineeringpaathshala.ButtonContainer.ButtonValue.Uname;
 import static com.example.android.engineeringpaathshala.R.id.btn_login;
 import static com.example.android.engineeringpaathshala.R.id.btn_newAccount;
 import static com.example.android.engineeringpaathshala.R.id.login_email;
@@ -93,16 +95,31 @@ public class LoginActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(loginemail,loginpassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(LoginActivity.this,"Login Successful",Toast.LENGTH_LONG).show();
+                if(task.isSuccessful()) {
+                    Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                     progressDialog.dismiss();
 
                     //check for admin
+                    Uname = loginemail;
+                    if (!TextUtils.isEmpty(ReturnString)) {
+                        if (ReturnString.matches("Post")) {
+                            Intent intent1 = new Intent(LoginActivity.this, PostActivity.class);
+                            startActivity(intent1);
+//                        } else if (ReturnString.matches("QA")) {
+//                            Intent intent2 = new Intent(LoginActivity.this, QAActivity.class);
+//                            startActivity(intent2);
+                        } else {
+                            Intent intent3 = new Intent(LoginActivity.this, DiscussionActivity.class);
+                            startActivity(intent3);
+                        }
+                    }
 
+                    //intent.putExtra("Uname",loginemail );
 
-                    startActivity(new Intent(LoginActivity.this,PostActivity.class));}
+                    //startActivity(new Intent(LoginActivity.this,PostActivity.class));
+
                     //checkUserExist();
-
+                }
                 else{
 
                     Toast.makeText(LoginActivity.this,"Login Error",Toast.LENGTH_LONG).show();

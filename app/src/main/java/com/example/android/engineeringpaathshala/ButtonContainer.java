@@ -6,6 +6,8 @@ package com.example.android.engineeringpaathshala;
 public  class ButtonContainer {
     public static class ButtonValue{
         public static  int buttonClicked;
+        public static String Uname;
+        public static String ReturnString;
     }
 
 }

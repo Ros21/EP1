@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:id="@+id/DSignin"
+        android:title="SignIn"
+        android:showAsAction="always"/>
+    <item  android:id="@+id/DSignOut"
+        android:title="SignOut"
+        android:showAsAction="never"
+        android:visible="false"/>
+</menu>

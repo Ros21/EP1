@@ -6,9 +6,10 @@
     <TextView
         android:text="Question"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="32dp"
+        android:paddingBottom="8dp"
         android:id="@+id/textViewMainQuestion"
         android:layout_alignParentStart="true" />
 

@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "158379783980-9pnndm7brv4n2h8347vad44b05lmfhd1.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.android.engineeringpaathshala",
-            "certificate_hash": "7DB02C4930E9D2AFD66A6FD8745729AB124C8E89"
-          }
-        },
-        {
           "client_id": "158379783980-l6u05jtb1k8nlmliepcfrohkudhrhijm.apps.googleusercontent.com",
           "client_type": 3
         }

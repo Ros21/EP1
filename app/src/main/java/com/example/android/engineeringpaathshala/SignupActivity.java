@@ -104,10 +104,21 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                         if(task.isSuccessful()){
                             //display some message here
                             String user_id = firebaseAuth.getCurrentUser().getUid();
+//                            DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Sai");
+//                            ref.setValue("Sai");
+
                             DatabaseReference current_user_db = mDatabase.child(user_id);
                             current_user_db.child("E-mail").setValue(email);
                             current_user_db.child("Contact Number").setValue(contactNumber);
                             current_user_db.child("Name").setValue(name);
+
+                            ButtonContainer.ButtonValue.Uname= email;
+
+//                            mDatabase.setValue("2Sai");
+//                            Log.v("Aum Sai Ram ======= ","User name is "+ name);
+//                            Log.v("Aum Sai Ram ======= ","E-mail    is "+ email);
+//                            Log.v("Aum Sai Ram ======= ","User_id is "+ user_id);
+
 
                             Toast.makeText(SignupActivity.this,"Successfully registered",Toast.LENGTH_LONG).show();
                             startActivity(new Intent(SignupActivity.this, LoginActivity.class));

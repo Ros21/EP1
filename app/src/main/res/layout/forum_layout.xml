@@ -19,4 +19,16 @@
         android:layout_below="@+id/askButton"
         />
 
+    <Button
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:id="@+id/buttonSign"
+        android:onClick="signFunction"/>
+
+
 </RelativeLayout>
