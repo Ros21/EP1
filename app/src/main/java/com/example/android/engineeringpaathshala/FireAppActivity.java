@@ -25,6 +25,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.IOException;
+import java.util.Random;
 
 
 public class FireAppActivity extends AppCompatActivity implements View.OnClickListener /*  implementing click listener */ {
@@ -38,9 +39,7 @@ public class FireAppActivity extends AppCompatActivity implements View.OnClickLi
     //ImageView
     private ImageView imageView;
     private StorageReference mstorageRef;
-
-
-
+    private String text1;
 
 
     //a Uri object to store file path
@@ -118,8 +117,30 @@ public class FireAppActivity extends AppCompatActivity implements View.OnClickLi
             progressDialog.setTitle("Uploading");
             progressDialog.show();
 
+            Random r = new Random();
+            int i1 = r.nextInt(1000 - 1) + 1;
 
-            StorageReference riversRef = mstorageRef.child("images/pic.jpg");
+            switch(ButtonContainer.ButtonValue.uploadCategory){
+                case "syll":
+                    text1 = "syllabus/syll" +i1;
+                    //Toast.makeText(getApplicationContext(), "Syll", Toast.LENGTH_SHORT).show();
+                    break;
+                case "notes":
+                    text1 = "notes/note"+ i1;
+                    //Toast.makeText(getApplicationContext(), "Notes", Toast.LENGTH_SHORT).show();
+                    break;
+                case "qb":
+                    text1 = "questionBank/qb"+ i1;
+                    //Toast.makeText(getApplicationContext(), "qb", Toast.LENGTH_SHORT).show();
+                    break;
+                case "others":
+                    text1 = "others/other"+ i1;
+                    //Toast.makeText(getApplicationContext(), "others", Toast.LENGTH_SHORT).show();
+                    break;
+                default:
+                    text1 = "notes/note"+ i1;
+            }
+            StorageReference riversRef = mstorageRef.child(text1);
             riversRef.putFile(filePath)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override

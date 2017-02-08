@@ -28,7 +28,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
         switch (v.getId()) {
 
             case R.id.fileuploadid:
-                Intent i = new Intent(OptionsActivity.this, FireAppActivity.class);
+                Intent i = new Intent(OptionsActivity.this, CategoryUpload.class);
                 startActivity(i);
                 break;
 

@@ -29,6 +29,7 @@
         <activity android:name=".UploadActivity"/>
         <activity android:name=".FeedbackActivity"/>
         <activity android:name=".FireAppActivity"/>
+        <activity android:name=".CategoryUpload"/>
         <activity android:name=".SignupActivity"/>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".QAActivity"/>

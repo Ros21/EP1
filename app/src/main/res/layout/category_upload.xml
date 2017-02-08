@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Types :"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textViewType"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Syllabus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textViewSyll"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textViewType"
+        android:layout_toEndOf="@+id/textViewType" />
+
+    <TextView
+        android:text="Notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textViewNotes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textViewSyll"
+        android:layout_toEndOf="@+id/textViewType" />
+
+    <TextView
+        android:text="Question Bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textViewQB"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textViewNotes"
+        android:layout_toEndOf="@+id/textViewType" />
+
+    <TextView
+        android:text="Others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textViewOthers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textViewQB"
+        android:layout_toEndOf="@+id/textViewType" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:layout_below="@+id/checkBoxOthers"
+        android:layout_alignEnd="@+id/textViewNotes"
+        android:layout_marginTop="68dp"
+        android:onClick="submitFunc" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxSyll"
+        android:layout_alignBaseline="@+id/textViewSyll"
+        android:layout_alignBottom="@+id/textViewSyll"
+        android:layout_toStartOf="@+id/textViewSyll" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxNotes"
+        android:checked="true"
+        android:layout_above="@+id/textViewQB"
+        android:layout_toStartOf="@+id/textViewNotes" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxQB"
+        android:layout_above="@+id/textViewOthers"
+        android:layout_toStartOf="@+id/textViewQB" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxOthers"
+        android:layout_alignBottom="@+id/textViewOthers"
+        android:layout_toStartOf="@+id/textViewOthers" />
+
+
+</RelativeLayout>

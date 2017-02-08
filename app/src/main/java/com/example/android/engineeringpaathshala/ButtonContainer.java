@@ -8,6 +8,7 @@ public  class ButtonContainer {
         public static  int buttonClicked;
         public static String Uname;
         public static String ReturnString;
+        public static String uploadCategory;
     }
 
 }
