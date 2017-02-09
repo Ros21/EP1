@@ -25,10 +25,16 @@
         android:text="Question Bank"
         android:textAllCaps="false"/>
     <Button
-        android:id="@+id/topicWiseLearn"
+    android:id="@+id/books"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Books"
+    android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/youtubeLinks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TopicWise Learn"
+        android:text="Youtube Links"
         android:textAllCaps="false"/>
 
 </LinearLayout>

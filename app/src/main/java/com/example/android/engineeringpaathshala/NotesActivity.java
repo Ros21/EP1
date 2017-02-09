@@ -76,6 +76,104 @@ public class NotesActivity extends AppCompatActivity {
                         i.setData(Uri.parse(url));
                         startActivity(i);
                         break;
+                    case 63:
+
+                        url = "https://drive.google.com/file/d/0B-hExRW9Hk6aZWRGbTBpbEJhdUU/view";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+                    case 64:
+
+                        url = "https://drive.google.com/open?id=0B-hExRW9Hk6adGl1aXc1cGpGQzg";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+                }
+
+            }
+        });
+
+        Button btn_youtube = (Button) findViewById(R.id.youtubeLinks);
+        btn_youtube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                ButtonValue.buttonClicked = 2;
+//               callIntent();
+                switch (ButtonContainer.ButtonValue.buttonClicked ) {
+                    case 61:
+
+                        String url = "https://www.youtube.com/watch?v=sG6WGvzmVaw&list=PL423F57EA64931D9F";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+
+                    case 62:
+
+                        url = "https://www.youtube.com/watch?v=y9RAhEfLfJs&list=PL84637AA7125111CB";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+                    case 63:
+
+                        url = "https://www.youtube.com/watch?v=Z6f9ckEElsU&list=PL0A93F793E2371F15";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+                    case 64:
+
+                        url = "https://www.youtube.com/watch?v=iK9Wkuprgn0&list=PL6MpDZWD2gTG1uxUTmKA2Kv9Y2Yi_Bbde";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+                }
+
+            }
+        });
+
+        Button btn_books = (Button) findViewById(R.id.books);
+        btn_books.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                ButtonValue.buttonClicked = 2;
+//               callIntent();
+                switch (ButtonContainer.ButtonValue.buttonClicked ) {
+                    case 61:
+
+                        String url = "https://drive.google.com/drive/folders/0B-hExRW9Hk6aamE0NGtaYURpY0U";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+
+                    case 62:
+
+                        url = "https://drive.google.com/open?id=0B-hExRW9Hk6aeHdISEp4dkVhekk";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+
+                    case 63:
+
+                        url = "https://drive.google.com/open?id=0B-hExRW9Hk6acGpfUFF5SkJmaUE";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
+
+                    case 64:
+
+                        url = "https://drive.google.com/open?id=0B-hExRW9Hk6aQWxyWUdBR19fZXM";
+                        i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        break;
                 }
 
             }
