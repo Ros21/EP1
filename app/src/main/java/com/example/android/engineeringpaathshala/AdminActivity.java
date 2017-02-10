@@ -64,9 +64,9 @@ public class AdminActivity extends AppCompatActivity {
                         TextView text = (TextView) v.findViewById(android.R.id.text1);
                         text.setText(model);
                         if (position % 2 == 1) {
-                            v.setBackgroundColor(Color.BLUE);
+                            v.setBackgroundColor(Color.YELLOW);
                         } else {
-                            v.setBackgroundColor(Color.CYAN);
+                            v.setBackgroundColor(Color.GREEN);
                         }
 
                     }

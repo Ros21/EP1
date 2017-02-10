@@ -14,12 +14,15 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:hint="Post your Question Here" />
+        android:hint="Post your Question Here"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/holo_orange_dark" />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Post"
         android:onClick="questionFunction"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/editTextQuestion"/>
+        android:layout_below="@+id/editTextQuestion"
+        android:background="@android:color/holo_green_dark" />
 </RelativeLayout>

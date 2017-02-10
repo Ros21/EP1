@@ -52,9 +52,9 @@ public class DiscussionActivity extends AppCompatActivity {
                         text.setText(model);
 
                         if (position % 2 == 1) {
-                            v.setBackgroundColor(Color.BLUE);
+                            v.setBackgroundColor(Color.YELLOW);
                         } else {
-                            v.setBackgroundColor(Color.CYAN);
+                            v.setBackgroundColor(Color.GREEN);
                         }
 
                     }
