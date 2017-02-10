@@ -21,7 +21,11 @@
         android:id="@+id/ratingBarAvg"
         android:layout_below="@+id/textViewAvg"
         android:layout_alignStart="@+id/textViewAvg"
-        android:layout_marginStart="13dp" />
+        android:layout_marginStart="13dp"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize=".5"
+        style="@style/Widget.AppCompat.RatingBar" />
 
     <TextView
         android:text="Average Rating"
@@ -31,7 +35,7 @@
         android:layout_marginTop="20dp"
         android:id="@+id/textViewAvg"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/errorColor"
+        android:textColor="?attr/textColorAlertDialogListItem"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 

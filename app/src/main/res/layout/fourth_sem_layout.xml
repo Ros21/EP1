@@ -7,36 +7,46 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    >
+    android:background="@drawable/epl">
     <Button
         android:id="@+id/dbms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DBMS"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        android:background="@color/errorColor" />
     <Button
         android:id="@+id/maths4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Maths IV"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_green_dark" />
     <Button
         android:id="@+id/microprocessor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Microprocessor"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/colorActivatedHighlight" />
     <Button
         android:id="@+id/instrumentation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Instrumentation"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        android:background="@color/gold" />
     <Button
         android:id="@+id/apt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="APT"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_red_light" />
 
 </LinearLayout>

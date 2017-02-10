@@ -2,6 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="372dp"
+        android:layout_height="247dp"
+        android:src="@drawable/ep_background"
+        android:id="@+id/imageViewEP"
+        android:scaleType="fitCenter" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,11 +30,14 @@
         android:text="Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_login" />
+        android:id="@+id/btn_login"
+        android:background="@color/linkColor" />
+
     <Button
         android:text="Create a New Account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_newAccount" />
+        android:id="@+id/btn_newAccount"
+        android:background="@color/errorColor" />
 
 </LinearLayout>

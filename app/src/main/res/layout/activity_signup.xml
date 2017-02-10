@@ -2,13 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="372dp"
+        android:layout_height="247dp"
+        android:src="@drawable/ep_background"
+        android:id="@+id/imageViewEP"
+        android:scaleType="fitCenter" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editNameField"
-        android:hint="Name" />
+        android:hint="Name"
+        android:singleLine="false" />
 
     <EditText
         android:layout_width="match_parent"
@@ -37,7 +45,8 @@
 
     <Button
         android:text="SignUp"
-        android:layout_width="143dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonSignup" />
+        android:id="@+id/buttonSignup"
+        android:background="@android:color/holo_green_light" />
 </LinearLayout>

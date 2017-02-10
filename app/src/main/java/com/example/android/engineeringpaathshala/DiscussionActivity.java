@@ -1,6 +1,7 @@
 package com.example.android.engineeringpaathshala;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -49,6 +50,12 @@ public class DiscussionActivity extends AppCompatActivity {
 
                         TextView text = (TextView) v.findViewById(android.R.id.text1);
                         text.setText(model);
+
+                        if (position % 2 == 1) {
+                            v.setBackgroundColor(Color.BLUE);
+                        } else {
+                            v.setBackgroundColor(Color.CYAN);
+                        }
 
                     }
                 };

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -60,13 +61,14 @@
 
     <Button
         android:text="Submit"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonSubmit"
         android:layout_below="@+id/checkBoxOthers"
-        android:layout_alignEnd="@+id/textViewNotes"
         android:layout_marginTop="68dp"
-        android:onClick="submitFunc" />
+        android:onClick="submitFunc"
+        android:background="?attr/colorPrimaryDark"
+        android:layout_alignParentEnd="true" />
 
 
     <CheckBox

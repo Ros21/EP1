@@ -14,13 +14,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/buttonChoose"       />
+            android:id="@+id/buttonChoose"
+            android:background="@color/gold" />
         <Button
             android:text="Upload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/buttonUpload"       />
+            android:id="@+id/buttonUpload"
+            android:background="@android:color/holo_blue_light" />
     </LinearLayout>
     <ImageView
         android:layout_width="match_parent"

@@ -8,55 +8,66 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".SemesterActivity">
+    tools:context=".SemesterActivity"
+    android:backgroundTint="@color/com_facebook_share_button_text_color"
+    android:background="@mipmap/ep1"
+    tools:background="@drawable/epl">
 
     <Button
         android:id="@+id/first_sem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="First Semester"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_green_light" />
     <Button
         android:id="@+id/second_sem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Second Semester"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:backgroundTint="@color/errorColor" />
     <Button
         android:id="@+id/third_sem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Third Semester"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_orange_dark" />
     <Button
     android:id="@+id/fourth_sem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Fourth Semester"
-    android:textAllCaps="false"/>
+    android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_orange_light" />
     <Button
         android:id="@+id/fifth_sem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fifth Semester"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_green_dark" />
     <Button
         android:id="@+id/sixth_sem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sixth Semester"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:backgroundTint="@color/com_facebook_button_send_background_color" />
     <Button
         android:id="@+id/seventh_sem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Seventh Semester"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_purple" />
     <Button
         android:id="@+id/eight_sem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Eight Semester"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:backgroundTint="@android:color/holo_blue_light" />
 
 </LinearLayout>

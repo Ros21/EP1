@@ -20,7 +20,8 @@
         android:id="@+id/buttonSign"
         android:onClick="signFunction"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_red_light" />
 
 
 </RelativeLayout>
