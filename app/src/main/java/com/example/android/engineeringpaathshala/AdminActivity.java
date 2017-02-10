@@ -1,6 +1,8 @@
 package com.example.android.engineeringpaathshala;
 
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +33,9 @@ public class AdminActivity extends AppCompatActivity {
         setContentView(R.layout.admin_layout);
       //  textViewR = (TextView) findViewById(R.id.textViewRating);
         ratingBar =(RatingBar) findViewById(R.id.ratingBarAvg);
+        LayerDrawable stars = (LayerDrawable) ratingBar.getProgressDrawable();
+        stars.getDrawable(2).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
+
         ListView listView =(ListView) findViewById(R.id.listViewAdmin);
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Feedback");
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("Ratings").child("total");

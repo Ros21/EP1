@@ -1,6 +1,9 @@
 package com.example.android.engineeringpaathshala;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -33,6 +36,9 @@ public class FeedbackActivity extends AppCompatActivity {
         setTitle("FeedBack");
 
         ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+
+        LayerDrawable stars = (LayerDrawable) ratingBar.getProgressDrawable();
+        stars.getDrawable(2).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
 
         final DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("Ratings").child("total");
 

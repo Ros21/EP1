@@ -145,7 +145,7 @@ public class NotesActivity extends AppCompatActivity {
                 switch (ButtonContainer.ButtonValue.buttonClicked ) {
                     case 61:
 
-                        String url = "https://drive.google.com/drive/folders/0B-hExRW9Hk6aamE0NGtaYURpY0U";
+                        String url = "https://drive.google.com/file/d/0B-hExRW9Hk6aV0FzWUZXQkZkWGs/view";
                         Intent i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
                         startActivity(i);

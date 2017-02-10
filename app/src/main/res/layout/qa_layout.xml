@@ -19,6 +19,7 @@
         android:layout_below="@+id/textViewMainQuestion"
         android:layout_alignParentStart="true"
         android:id="@+id/listViewAnswers"
+        android:layout_above="@+id/editTextPostAns"
         android:layout_alignParentEnd="true" />
 
     <EditText

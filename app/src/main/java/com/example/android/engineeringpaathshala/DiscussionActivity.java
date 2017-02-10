@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
+import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
  */
 
 public class DiscussionActivity extends AppCompatActivity {
-    private ListView listView;
+    private GridView listView;
     private DatabaseReference ref;
     private FirebaseListAdapter<String> adapter;
     private Menu signInMenu;
@@ -41,7 +41,7 @@ public class DiscussionActivity extends AppCompatActivity {
 //        words.add("What is Simulation?");
 //        words.add("What is Simulation?");
 
-        listView =(ListView) findViewById(R.id.listViewQuestion);
+        listView =(GridView) findViewById(R.id.listViewQuestion);
         ref = FirebaseDatabase.getInstance().getReference("Discussion");
         adapter =
                 new FirebaseListAdapter<String>(DiscussionActivity.this, String.class, android.R.layout.simple_list_item_1, ref) {
@@ -51,11 +51,11 @@ public class DiscussionActivity extends AppCompatActivity {
                         TextView text = (TextView) v.findViewById(android.R.id.text1);
                         text.setText(model);
 
-                        if (position % 2 == 1) {
-                            v.setBackgroundColor(Color.YELLOW);
-                        } else {
-                            v.setBackgroundColor(Color.GREEN);
-                        }
+//                        if (position % 2 == 1) {
+                           v.setBackgroundColor(Color.YELLOW);
+//                        } else {
+//                            v.setBackgroundColor(Color.GREEN);
+//                        }
 
                     }
                 };
