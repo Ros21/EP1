@@ -8,12 +8,14 @@ import android.view.View;
 /**
  * Created by Roshan on 10/20/2016.
  */
-public class CourseActivity4 extends AppCompatActivity {
+public class CourseActivity8 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fourth_sem_layout);
-}
+        setContentView(R.layout.eight_sem_layout);
+
+    }
+
     public void DCFunction(View view) {
         ButtonContainer.ButtonValue.buttonClicked = 61;
         Intent intent = new Intent(this,NotesActivity.class);
@@ -46,5 +48,3 @@ public class CourseActivity4 extends AppCompatActivity {
 //        startActivity(intent);
 //    }
 }
-
-

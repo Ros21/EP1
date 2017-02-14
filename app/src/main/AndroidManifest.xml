@@ -18,8 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CourseActivity1"/>
+        <activity android:name=".CourseActivity2"/>
+        <activity android:name=".CourseActivity3"/>
         <activity android:name=".CourseActivity4"/>
+        <activity android:name=".CourseActivity5"/>
         <activity android:name=".CourseActivity6"/>
+        <activity android:name=".CourseActivity7"/>
+        <activity android:name=".CourseActivity8"/>
         <activity android:name=".NotesActivity"/>
         <activity android:name=".WebViewActivity"/>
         <activity android:name=".DiscussionActivity"/>

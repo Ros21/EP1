@@ -13,15 +13,7 @@ public class CourseActivity6 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sixth_sem_layout);
-//        Button btn_dc = (Button) findViewById(R.id.dc);
-//        btn_dc.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view) {
-//                ButtonContainer.ButtonValue.buttonClicked = 61;
-//                Intent intent = new Intent(CourseActivity6.this,NotesActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+
     }
 
     public void DCFunction(View view) {
