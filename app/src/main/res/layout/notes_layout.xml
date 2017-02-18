@@ -46,6 +46,6 @@
         android:text="Youtube Links"
         android:textAllCaps="false"
         android:layout_marginBottom="16dp"
-        android:background="?android:attr/colorPrimary" />
+        android:background="@color/com_facebook_button_send_background_color"/>
 
 </LinearLayout>

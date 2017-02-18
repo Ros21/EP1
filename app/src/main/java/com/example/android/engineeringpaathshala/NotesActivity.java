@@ -64,15 +64,15 @@ public class NotesActivity extends AppCompatActivity {
                 switch (ButtonContainer.ButtonValue.buttonClicked ) {
                     case 61:
 
-                        String url = "https://drive.google.com/open?id=0B-hExRW9Hk6aTkJQbGd1cXgzOXM";
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse(url));
-                        startActivity(i);
+//                        String url = "https://drive.google.com/open?id=0B-hExRW9Hk6aTkJQbGd1cXgzOXM";
+//                        Intent i = new Intent(Intent.ACTION_VIEW);
+//                        i.setData(Uri.parse(url));
+                        startActivity(new Intent(NotesActivity.this,NotesDcActivity.class));
                         break;
                     case 62:
 
-                        url = "https://drive.google.com/open?id=0B-hExRW9Hk6aWUdxc0hXSjdkRHM";
-                        i = new Intent(Intent.ACTION_VIEW);
+                        String url = "https://drive.google.com/open?id=0B-hExRW9Hk6aWUdxc0hXSjdkRHM";
+                        Intent i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
                         startActivity(i);
                         break;
@@ -179,9 +179,16 @@ public class NotesActivity extends AppCompatActivity {
             }
         });
 
+        Button btn_qb = (Button) findViewById(R.id.question_bank);
+        btn_qb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(NotesActivity.this,QBActivity.class));
+
+    }});
     }
+}
 //    private void callIntent(){
 //        Intent intent = new Intent(NotesActivity.this, WebViewActivity.class);
 //        startActivity(intent);
 //    }
-}

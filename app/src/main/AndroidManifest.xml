@@ -40,6 +40,8 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".QAActivity"/>
         <activity android:name=".AdminActivity"/>
+        <activity android:name=".NotesDcActivity"/>
+        <activity android:name=".QBActivity"/>
     </application>
 
 </manifest>
