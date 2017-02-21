@@ -4,10 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 /**
  * Created by Roshan on 10/26/2016.
@@ -49,25 +46,25 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.itemSignin:
-                startActivity(new Intent(OptionsActivity.this,LoginActivity.class));
-                //Toast.makeText(getApplicationContext(),"SignIn Selected",Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.itemSearch:
-                Toast.makeText(getApplicationContext(),"Search Selected",Toast.LENGTH_LONG).show();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case R.id.itemSignin:
+//                startActivity(new Intent(OptionsActivity.this,LoginActivity.class));
+//                //Toast.makeText(getApplicationContext(),"SignIn Selected",Toast.LENGTH_LONG).show();
+//                return true;
+//            //case R.id.itemSearch:
+//            //    Toast.makeText(getApplicationContext(),"Search Selected",Toast.LENGTH_LONG).show();
+//            //    return true;
+//
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
 }

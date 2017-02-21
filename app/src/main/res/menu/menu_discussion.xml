@@ -3,6 +3,8 @@
 
     <item  android:id="@+id/item_askQuestion"
         android:title="Ask Question"
+        android:showAsAction="never"/>
+    <item  android:id="@+id/item_mainPage"
+        android:title="Main Page"
         android:showAsAction="always"/>
-
 </menu>

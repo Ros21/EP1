@@ -17,34 +17,42 @@ public class CourseActivity5 extends AppCompatActivity {
     }
 
     public void DCFunction(View view) {
-        ButtonContainer.ButtonValue.buttonClicked = 61;
+        ButtonContainer.ButtonValue.buttonClicked = 51;
         Intent intent = new Intent(this,NotesActivity.class);
         startActivity(intent);
 
     }
 
     public void ESFunction(View view) {
-        ButtonContainer.ButtonValue.buttonClicked = 62;
+        ButtonContainer.ButtonValue.buttonClicked = 52;
         Intent intent = new Intent(this,NotesActivity.class);
         startActivity(intent);
     }
 
 
     public void OOSEFnction(View view) {
-        ButtonContainer.ButtonValue.buttonClicked = 63;
+        ButtonContainer.ButtonValue.buttonClicked = 53;
         Intent intent = new Intent(this,NotesActivity.class);
         startActivity(intent);
     }
 
     public void SMFunction(View view) {
-        ButtonContainer.ButtonValue.buttonClicked = 64;
+        ButtonContainer.ButtonValue.buttonClicked = 54;
         Intent intent = new Intent(this,NotesActivity.class);
         startActivity(intent);
     }
 
-//    public void AdvJavaFunction(View view) {
-//        ButtonContainer.ButtonValue.buttonClicked = 65;
-//        Intent intent = new Intent(CourseActivity6.this,NotesActivity.class);
-//        startActivity(intent);
-//    }
+    public void ProbFunction(View view) {
+        ButtonContainer.ButtonValue.buttonClicked = 55;
+        Intent intent = new Intent(this,NotesActivity.class);
+        startActivity(intent);
+    }
+
+    public void TocFunction(View view) {
+        ButtonContainer.ButtonValue.buttonClicked = 56;
+        Intent intent = new Intent(this,NotesActivity.class);
+        startActivity(intent);
+    }
+
+
 }

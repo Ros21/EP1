@@ -1,6 +1,7 @@
 package com.example.android.engineeringpaathshala;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -36,9 +37,17 @@ public class QBActivity extends AppCompatActivity {
 
         lv.setAdapter(adapter);
 
+
+
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i % 2 == 0) {
+                    view.setBackgroundColor(Color.YELLOW);
+                } else {
+                   view.setBackgroundColor(Color.GREEN);
+               }
                 switch (i){
                     case 0:
                         url = "https://drive.google.com/file/d/0B-hExRW9Hk6aSlJkUmFUZk9OVmM/view";

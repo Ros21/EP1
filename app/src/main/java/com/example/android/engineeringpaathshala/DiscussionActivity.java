@@ -118,6 +118,8 @@ public class DiscussionActivity extends AppCompatActivity {
                     startActivity(in2);
                 }
                 return true;
+            case R.id.item_mainPage:
+                startActivity(new Intent(this, OptionsActivity.class));
 
             default:
                 return super.onOptionsItemSelected(item);

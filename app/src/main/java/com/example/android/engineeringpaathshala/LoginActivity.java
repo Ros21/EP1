@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -67,18 +70,19 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-    public void checkLogin(){
-        final String loginemail = editLoginTextEmail.getText().toString();
-        final String loginpassword  = editLoginTextPassword.getText().toString();
 
-        if(TextUtils.isEmpty(loginemail)){
-            Toast.makeText(this,"Please enter email",Toast.LENGTH_LONG).show();
+    public void checkLogin() {
+        final String loginemail = editLoginTextEmail.getText().toString();
+        final String loginpassword = editLoginTextPassword.getText().toString();
+
+        if (TextUtils.isEmpty(loginemail)) {
+            Toast.makeText(this, "Please enter email", Toast.LENGTH_LONG).show();
             return;
         }
 
         //checking if email and passwords are empty
-        if(TextUtils.isEmpty(loginpassword)){
-            Toast.makeText(this,"Please enter password",Toast.LENGTH_LONG).show();
+        if (TextUtils.isEmpty(loginpassword)) {
+            Toast.makeText(this, "Please enter password", Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -92,10 +96,10 @@ public class LoginActivity extends AppCompatActivity {
 //        }
 
 
-        mAuth.signInWithEmailAndPassword(loginemail,loginpassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        mAuth.signInWithEmailAndPassword(loginemail, loginpassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()) {
+                if (task.isSuccessful()) {
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                     progressDialog.dismiss();
 
@@ -119,15 +123,32 @@ public class LoginActivity extends AppCompatActivity {
                     //startActivity(new Intent(LoginActivity.this,PostActivity.class));
 
                     //checkUserExist();
-                }
-                else{
+                } else {
 
-                    Toast.makeText(LoginActivity.this,"Login Error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Login Error", Toast.LENGTH_LONG).show();
                     progressDialog.dismiss();
 
                 }
             }
         });
 
-    }}
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.mainPage1:
+                startActivity(new Intent(this, OptionsActivity.class));
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+}

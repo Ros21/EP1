@@ -15,6 +15,7 @@
         android:text="DBMS"
         android:textAllCaps="false"
         android:layout_marginBottom="16dp"
+        android:onClick="DCFunction"
         android:background="@color/errorColor" />
     <Button
         android:id="@+id/maths4"
@@ -23,6 +24,7 @@
         android:text="Maths IV"
         android:textAllCaps="false"
         android:layout_marginBottom="16dp"
+        android:onClick="ESFunction"
         android:background="@android:color/holo_green_dark" />
     <Button
         android:id="@+id/microprocessor"
@@ -31,6 +33,7 @@
         android:text="Microprocessor"
         android:textAllCaps="false"
         android:layout_marginBottom="16dp"
+        android:onClick="OOSEFnction"
         android:background="?android:attr/colorActivatedHighlight" />
     <Button
         android:id="@+id/instrumentation"
@@ -39,6 +42,7 @@
         android:text="Instrumentation"
         android:textAllCaps="false"
         android:layout_marginBottom="16dp"
+        android:onClick="SMFunction"
         android:background="@color/gold" />
     <Button
         android:id="@+id/apt"
@@ -47,6 +51,7 @@
         android:text="APT"
         android:textAllCaps="false"
         android:layout_marginBottom="16dp"
+        android:onClick="ProbFunction"
         android:background="@android:color/holo_red_light" />
 
 </LinearLayout>
